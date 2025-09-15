@@ -1,5 +1,4 @@
-import
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import WelcomePage from './components/WelcomePage';
 import BlindBoxMachine from './components/BlindBoxMachine';
 import ResultModal from './components/ResultModal';
