@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import WelcomePage from './components/WelcomePage';
 import BlindBoxMachine from './components/BlindBoxMachine';
 import ResultModal from './components/ResultModal';
@@ -22,8 +22,8 @@ function App() {
   }, [currentState === 'welcome']);
 
   const remainingItems = randomizedItems.filter((_, index) => !drawnItems.some(drawn => drawn.id === index));
-  const giftCount = randomizedItems.filter(item => item.type === 'gift').length;
-  const drawnGifts = drawnItems.filter(item => item.type === 'gift');
+// Remove unused giftCount variable since it's not being used anywhere
+// Remove unused drawnGifts variable since it's not being used
 
   const handleStartJourney = () => {
     setCurrentState('machine');
