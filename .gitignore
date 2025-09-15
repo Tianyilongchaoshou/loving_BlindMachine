@@ -23,5 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 .env
-# 忽略 public 目录下的 images 文件夹
-public/images/*
